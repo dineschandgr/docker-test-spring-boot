@@ -6,11 +6,13 @@ Run mvn clean package
 Step 2:
 
 #Build Docker Image 
- docker build -t docker-test-spring-boot-image .
+
+docker build -t docker-test-spring-boot-image .
 
 Step 3
 
 #Create Docker Container from Image
+
 docker run --name docker-test-spring-boot-container -d -p 8090:8090 docker-test-spring-boot-image
 
 Step 4
